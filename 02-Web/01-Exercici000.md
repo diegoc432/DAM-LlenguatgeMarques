@@ -12,10 +12,7 @@ Imagina que ets un paleontòleg i fas una pàgina web sobre **animals prehistòr
    - Tirannosaure
    - Triceratops
    - Diplodocus
-4. Una **llista ordenada** (`<ol>`) amb tres passos per veure dinosaures a Internet:
-   1. Obrir el navegador
-   2. Escriure "Dinosaures" al cercador
-   3. Fer clic als enllaços
+4. Una **llista ordenada** (`<ol>`) amb tres enllaços cap a pàgines de dinosaures.
 5. Una **imatge** (`<img>`) amb un dinosaure (posa una imatge dins la carpeta `imatges/` i fes-la aparèixer amb `width="200"`).
 6. Un **enllaç extern** (`<a>`) que porti a la Viquipèdia dels dinosaures:  
    [https://ca.wikipedia.org/wiki/Dinosaures](https://ca.wikipedia.org/wiki/Dinosaures)  
@@ -54,7 +51,7 @@ Crea una segona pàgina amb un petit **currículum del paleontòleg**:
 ### Exemple d’estructura d’arxius
 
 ```text
-exercici-000/
+DAM1M04-Exercici000/
 ├── index.html
 ├── contacte.html
 ├── galeria.html
@@ -64,5 +61,5 @@ exercici-000/
 ```
 ## Entrega
 
-Entrega l'exercici com un nou projecte a GitHub anomenat `DAM1M04-Exercici000`, i l'enllaç del repositori GitHub anterior a l'espai d'entrega del Moodle de l'assignatura
+Entrega l'exercici com un nou repositori a GitHub anomenat `DAM1M04-Exercici000`, i l'enllaç del repositori GitHub anterior a l'espai d'entrega del Moodle de l'assignatura
 

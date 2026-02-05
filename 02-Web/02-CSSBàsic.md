@@ -13,7 +13,7 @@ CSS és el disseny i decoració (colors, aparença).
 
 [Documentació CSS](https://developer.mozilla.org/en-US/docs/Web/CSS#reference)
 
-## Maneres de definir CSS
+## Maneres de definir CSS
 
 Hi ha tres maneres principals d’afegir CSS a una pàgina web:
 
@@ -25,7 +25,7 @@ S’escriu directament dins de l’atribut style de l’element HTML.
 <p style="color: red; font-size: 20px;">Aquest text és vermell i gran.</p>
 ```
 
-**Important**: S'ha d'evitar aquesta manera de definir CSS, perquè normalment el valor de l'atribut **"style"** es modificar a partir de la programació amb *JavaScript*.
+<span style="color:#AA0000; font-weight: bold;">Important</span>: S'ha d'evitar aquesta manera de definir CSS, perquè normalment el valor de l'atribut **"style"** es modificar a partir de la programació amb *JavaScript*.
 
 ### CSS dins del document (internal CSS)
 
@@ -47,15 +47,21 @@ Dins d'aquest element es defineixen les propietats CSS, en aquest exemple diem q
 </body>
 ```
 
-**Important**: D'aquesta manera els estils definits només afecten la pàgina on es defineixen. Quan hi ha molt codi CSS costa d'organitzar.
+<span style="color:#AA0000; font-weight: bold;">Important</span>: D'aquesta manera els estils definits només afecten la pàgina on es defineixen. Quan hi ha molt codi CSS costa d'organitzar.
 
 ### CSS en un fitxer (external CSS)
 
 S’escriu en un arxiu .css separat i s’importa amb un element `<link>` dins del `<head>`.
+```html
+<head>
+    <link rel="stylesheet" href="estils.css">
+    <title>Estils</title>
+</head>
+```
 
-**Exemple-004**: Obrir amb "Show preview" la pàgina "02-Web/exemple-004/index.html"
+**Exemple-00**: Obrir amb "Show preview" la pàgina "02-Web/02-CSSBàsic/exemple-00/.html"
 
-**Important**: Moltes pàgines web, defineixen els estils combinant les tècniques anteriors:
+<span style="color:#AA0000; font-weight: bold;">Important</span>: Moltes pàgines web, defineixen els estils combinant les tècniques anteriors:
 
 - **Inline**: per CSS modificat a través de JavaScript
 - **Internal**: per ajustos específics del document
@@ -78,7 +84,7 @@ p {
 
 S’aplica a un element amb un id únic. Els identificadors han de ser únics a la pàgina, no poden estar repetits.
 
-**Important**, cada element ha de tenir un **id** diferent, per tant un estil definit amb **id** només es pot aplicar a un element.
+<span style="color:#AA0000; font-weight: bold;">Important</span>: Cada element ha de tenir un **id** diferent, per tant un estil definit amb **id** només es pot aplicar a un element.
 
 Al CSS es defineix amb **#** davant del selector:
 ```css
@@ -134,7 +140,7 @@ Les diferències amb l'**id** són que:
 </p>
 ```
 
-**Exemple-005**: Obrir amb "Show preview" la pàgina "02-Web/exemple-005/index.html"
+**Exemple-01**: Obrir amb "Show preview" la pàgina "02-Web/02-CSSBàsic/exemple-01/index.html"
 
 ## Pseudo-classes CSS
 
@@ -162,7 +168,7 @@ Les **Pseudo-classes** són “estats especials” que serveixen per aplicar est
 - **:required** → un camp obligatori.
 - **:valid / :invalid** → segons si el valor del formulari és vàlid o no.
 
-**Exemple-006**: Obrir amb "Show preview" la pàgina "02-Web/exemple-006/index.html"
+**Exemple-02**: Obrir amb "Show preview" la pàgina "02-Web/02-CSSBàsic/exemple-02/index.html"
 
 ## Jerarquia de selectors combinats
 
@@ -197,6 +203,7 @@ Selecciona només els elements que són fills directes del pare.
 ```
 
 Només els elements `<h2>` que estàn directament a sota d'un element amb identificador "base" seràn de color blau.
+```html
 <div id="base">
   <h2>Aquest serà blau</h2>
   <section>
@@ -206,6 +213,7 @@ Només els elements `<h2>` que estàn directament a sota d'un element amb identi
 <div>
   <h2>Aquest no és blau</h2>
 </div>
+```
 
 ## Pseudo-elements CSS
 
@@ -228,4 +236,24 @@ p::after {
 <p>Aquest paràgraf tindrà símbols afegits.</p>
 ```
 
-**Exemple-007**: Obrir amb "Show preview" la pàgina "02-Web/exemple-007/index.html"
+**Exemple-03**: Obrir amb "Show preview" la pàgina "02-Web/02-CSSBàsic/exemple-03/index.html"
+
+## Manipular CSS al navegador
+
+Els navegador tenen eines de desenvolupament, que permeten manipular el codi HTML i el codi CSS.
+
+Això permet provar valors, per després aplicar-los al codi original.
+
+```text
+Menú del navegador > Més eines > Eines de desenvolupament
+```
+
+O amb les combinacions de tecles
+```text
+Ctrl + Shift + I (Windows i Linux)
+Command (⌘) + Option (⌥) + I (Mac)
+```
+
+<center>
+<img src="./assets/css-eines.png" style="width: 90%; max-width: 600px">
+</center>

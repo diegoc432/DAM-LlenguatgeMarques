@@ -52,7 +52,11 @@ Imagina que ets un dissenyador web i fas una pàgina web per practicar amb **CSS
 ### Exemple d’estructura d’arxius
 
 ```text
-exercici-001/
+DAM1M04-Exercici000/
 ├── index.html
 ├── contacte.html
 └── estils.css
+```
+## Entrega
+
+Entrega l'exercici com un nou repositori a GitHub anomenat DAM1M04-Exercici001, i l'enllaç del repositori GitHub anterior a l'espai d'entrega del Moodle de l'assignatura
